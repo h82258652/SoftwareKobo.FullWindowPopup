@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
-  <Identity Name="8408c53a-f5a7-44df-9dff-6127a60ec61e" Publisher="CN=h82258652" Version="1.0.0.2" />
+  <Identity Name="8408c53a-f5a7-44df-9dff-6127a60ec61e" Publisher="CN=h82258652" Version="1.0.0.3" />
   <mp:PhoneIdentity PhoneProductId="8408c53a-f5a7-44df-9dff-6127a60ec61e" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>WindowsPhoneDemo</DisplayName>

@@ -12,6 +12,10 @@
         <StackPanel>
             <Button Content="显示全屏 Popup" Click="Button1_Click" />
             <Button Content="显示全屏 Popup 后退键关闭" Click="Button2_Click" />
+            <Button Content="模拟 Toast" Click="Button3_Click"/>
+        </StackPanel>
+        <StackPanel VerticalAlignment="Bottom">
+            <TextBlock x:Name="txtMsg" FontSize="20"></TextBlock>
         </StackPanel>
     </Grid>
 </Page>

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.22310.1
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoftwareKobo.FullWindowPopup.Windows", "SoftwareKobo.FullWindowPopup.Windows\SoftwareKobo.FullWindowPopup.Windows.csproj", "{7ED7B7D1-0C16-46EA-B204-470FFF81580E}"
 EndProject
@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoftwareKobo.FullWindowPopu
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "SoftwareKobo.FullWindowPopup.Shared", "SoftwareKobo.FullWindowPopup.Shared\SoftwareKobo.FullWindowPopup.Shared.shproj", "{C7D97D63-6CE1-4C50-A2CF-7B8961638A98}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{B0F0702B-B63F-4F2D-87B8-9E8EA945A7F7}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo", "Demo", "{B0F0702B-B63F-4F2D-87B8-9E8EA945A7F7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsPhoneDemo", "WindowsPhoneDemo\WindowsPhoneDemo.csproj", "{0C56792B-1F14-447D-AB8A-EEF4894EA501}"
 EndProject

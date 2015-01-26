@@ -9,7 +9,7 @@
                 <ControlTemplate TargetType="local:FullWindowPopup">
                     <Border x:Name="Border"
                         Background="{TemplateBinding Background}">
-                        <ContentPresenter x:Name="ContentPresenter" Content="{Binding Child}" />
+                        <ContentPresenter x:Name="ContentPresenter" Content="{TemplateBinding Child}" />
                     </Border>
                 </ControlTemplate>
             </Setter.Value>

@@ -27,5 +27,14 @@ namespace SoftwareKobo
             get;
             set;
         }
+
+        /// <summary>
+        /// 获取或设置显示弹出项时是否隐藏 StatusBar。
+        /// </summary>
+        public bool IsAutoHideStatusBar
+        {
+            get;
+            set;
+        }
     }
 }

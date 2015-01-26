@@ -1,6 +1,7 @@
 ﻿using System;
 using Windows.Foundation;
 using Windows.UI.Core;
+using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -15,7 +16,7 @@ namespace SoftwareKobo
         /// <summary>
         /// 获取 Child 依赖项属性的标识符。
         /// </summary>
-        public static readonly DependencyProperty ChildProperty = DependencyProperty.Register(nameof(Child), typeof(UIElement), typeof(FullWindowPopup), new PropertyMetadata(default(UIElement)));
+        public static readonly DependencyProperty ChildProperty = DependencyProperty.Register("Child", typeof(UIElement), typeof(FullWindowPopup), new PropertyMetadata(default(UIElement)));
 
         private readonly Popup _popup;
         private Window _currentWindow;
@@ -153,6 +154,15 @@ namespace SoftwareKobo
             }
 
 #if WINDOWS_PHONE_APP
+
+            if (IsAutoHideStatusBar)
+            {
+               StatusBar statusBar= StatusBar.GetForCurrentView();
+                if (statusBar!=null)
+                {
+                    
+                }
+            }
             Windows.Phone.UI.Input.HardwareButtons.BackPressed += HardwareButtons_BackPressed;
 #endif
 
