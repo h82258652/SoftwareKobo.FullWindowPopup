@@ -57,6 +57,16 @@ namespace WindowsPhoneDemo
             FullWindowPopup popup = new FullWindowPopup();
             popup.Background = new SolidColorBrush(Colors.Red);
             popup.Show();
+
+            HideFullWindowPopupOnNavigating(popup);
+        }
+
+        private void HideFullWindowPopupOnNavigating(FullWindowPopup popup)
+        {
+            this.Frame.Navigating += (sender,e) =>
+            {
+                popup.Hide();
+            };
         }
 
         private void Button2_Click(object sender, RoutedEventArgs e)
@@ -65,6 +75,8 @@ namespace WindowsPhoneDemo
             popup.Background = new SolidColorBrush(Colors.Red);
             popup.IsCloseOnBackPress = true;
             popup.Show();
+            
+            HideFullWindowPopupOnNavigating(popup);
         }
 
         private void Button3_Click(object sender, RoutedEventArgs e)
@@ -93,6 +105,8 @@ namespace WindowsPhoneDemo
                 txtMsg.Text = string.Empty;
             };
             popup.Show();
+
+            HideFullWindowPopupOnNavigating(popup);
         }
 
         private async void Popup_Closed(object sender, object e)
@@ -103,6 +117,11 @@ namespace WindowsPhoneDemo
         private async void Popup_Opened(object sender, object e)
         {
             await StatusBar.GetForCurrentView().HideAsync();
+        }
+
+        private void Button4_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof (ListViewDemo));
         }
     }
 }

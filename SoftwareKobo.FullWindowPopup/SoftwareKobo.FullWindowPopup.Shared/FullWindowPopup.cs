@@ -34,6 +34,15 @@ namespace SoftwareKobo
             _currentWindow.SizeChanged += Window_SizeChanged;
         }
 
+        public FullWindowPopup(Page page) : this()
+        {
+            Frame frame = page.Frame;
+            frame.Navigating += (sender, e) =>
+            {
+                Hide();
+            };
+        }
+
         ~FullWindowPopup()
         {
             if (_currentWindow != null)
@@ -157,10 +166,10 @@ namespace SoftwareKobo
 
             if (IsAutoHideStatusBar)
             {
-               StatusBar statusBar= StatusBar.GetForCurrentView();
-                if (statusBar!=null)
+                StatusBar statusBar = StatusBar.GetForCurrentView();
+                if (statusBar != null)
                 {
-                    
+
                 }
             }
             Windows.Phone.UI.Input.HardwareButtons.BackPressed += HardwareButtons_BackPressed;
